@@ -1,0 +1,25 @@
+package com.poc.petbook.Entities;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document
+public class ChatMessages {
+
+	@Field
+	private ObjectId _id;
+	@Field
+	private ArrayList<Messages> messages = new ArrayList<Messages>();
+	@Field
+	private Date matchedDate;
+	
+	public ChatMessages(ArrayList<Messages> messages, Date matchedDate) {
+		this.messages = messages;
+		this.matchedDate = matchedDate;
+	}
+	
+}

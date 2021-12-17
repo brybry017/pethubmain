@@ -1,0 +1,18 @@
+package com.poc.petbook.Entities;
+
+import java.util.ArrayList;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document
+public class ChatMessages {
+
+	@Field
+	private ObjectId _id;
+	@Field
+	private ArrayList<Messages> messages = new ArrayList<Messages>();
+	
+	
+}

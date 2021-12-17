@@ -1,0 +1,22 @@
+package com.poc.petbook.Entities;
+
+public class ChannelList {
+	
+	private String channel;
+	
+	public ChannelList() {
+		
+	}
+
+	public ChannelList(String channel) {
+		this.channel = channel;
+	}
+	
+	public String getDogname() {
+		return channel;
+	}
+
+	public void setDogname(String channel) {
+		this.channel = channel;
+	}
+}

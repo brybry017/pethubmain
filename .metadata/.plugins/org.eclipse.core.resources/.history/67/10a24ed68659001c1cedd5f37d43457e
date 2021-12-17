@@ -1,0 +1,7 @@
+package com.poc.petbook.Repositories;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public class UsersRepository implements MongoRepository<T, ID> {
+
+}

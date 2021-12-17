@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Messages.java&apos; to &apos;PetbookChat/src/main/java/com.poc.petbook.Entities&apos;&#x0D;&#x0A;- Original project: &apos;Petbook&apos;&#x0D;&#x0A;- Destination element: &apos;PetbookChat/src/main/java/com.poc.petbook.Entities&apos;&#x0D;&#x0A;- Original element: &apos;com.poc.petbook.Entities.Messages.java&apos;" description="Copy compilation unit" destination="=PetbookChat/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.poc.petbook.Entities" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.poc.petbook.Entities{Messages.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1639454271517" units="1" version="1.0"/>
+</session>

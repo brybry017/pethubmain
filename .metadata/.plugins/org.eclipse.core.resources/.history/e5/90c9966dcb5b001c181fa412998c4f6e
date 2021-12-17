@@ -1,0 +1,29 @@
+package com.poc.petbook.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.poc.petbook.Entities.ChatMessages;
+import com.poc.petbook.Repositories.ChatMessageRepository;
+
+import reactor.core.publisher.Mono;
+
+@RestController
+public class ChatMessageController {
+
+	@Autowired
+	ChatMessageRepository chatMessageRepository;
+	
+	@PostMapping("/chats")
+	@ResponseStatus(HttpStatus.CREATED)
+	public Mono<ChatMessages> postChat(@RequestBody Message chatMessage){	
+		return chatMessageRepo.save(chatMessage).subscribe();
+	}
+	
+	@GetMapping(value = "/chats/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+	public Flux<Message> streamMessages(@RequestParam String channelId){
+		return chatMessageRepo.findWithTailableCursorByChannelId(channelId);
+	}
+}

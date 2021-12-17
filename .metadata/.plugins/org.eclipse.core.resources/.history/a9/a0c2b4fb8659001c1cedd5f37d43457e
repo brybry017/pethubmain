@@ -1,0 +1,16 @@
+package com.poc.petbook.Entities;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document
+public class Users {
+
+	@Field
+	private ObjectId _id;
+	@Field
+	private String username;
+	@Field
+	private String password;
+}

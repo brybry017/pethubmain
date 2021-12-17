@@ -1,0 +1,61 @@
+package com.poc.petbook.Entities;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document
+public class ChatMessages {
+
+	@Field
+	private ObjectId _id;
+	@Field
+	private String message;
+	@Field
+	private String sender;
+	@Field
+	private String sendee;
+	@Field
+	private String channelId;
+	
+	public ChatMessages() {
+		
+	}
+	
+	public ChatMessages(String message, String sender, String sendee, String channelId) {
+		this.message = message;
+		this.sender = sender;
+		this.sendee = sendee;
+		this.channelId = channelId;
+	}
+	public ObjectId get_id() {
+		return _id;
+	}
+	public void set_id(ObjectId _id) {
+		this._id = _id;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public String getSender() {
+		return sender;
+	}
+	public void setSender(String sender) {
+		this.sender = sender;
+	}
+	public String getSendee() {
+		return sendee;
+	}
+	public void setSendee(String sendee) {
+		this.sendee = sendee;
+	}
+	public String getChannelId() {
+		return channelId;
+	}
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
+	}
+}

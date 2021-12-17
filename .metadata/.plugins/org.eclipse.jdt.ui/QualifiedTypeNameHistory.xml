@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.Dogs"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Repository.DogsRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Repository.DogOwnerRepository"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.DogOwner"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.Match"/>
+    <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Document"/>
+    <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Field"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.Matched"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.Query"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Update"/>
+    <fullyQualifiedTypeName name="org.bson.types.ObjectId"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.MatchInfo"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Repositories.UsersRepositories"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.Users"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.poc.petbook.Entities.ChannelList"/>
+</qualifiedTypeNameHistroy>

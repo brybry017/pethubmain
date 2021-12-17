@@ -1,0 +1,33 @@
+package com.poc.petbook.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.poc.petbook.Entities.Users;
+import com.poc.petbook.Repositories.UsersRepositories;
+
+@RestController
+public class Login {
+
+	@Autowired
+	UsersRepositories usersRepositories;
+	
+	@RequestMapping(method=RequestMethod.POST,value="/login")
+	public ResponseEntity<String> login(@RequestBody Users users) {
+		
+		
+		Users user1 = usersRepositories.findByusernameAndpassword(users.getUsername(), users.getPassword());
+		System.out.println(user1);
+		if(user1.equals(null)) {
+			System.out.println("NULL");
+			return new ResponseEntity<String>("No Such User found ",HttpStatus.BAD_GATEWAY);
+		}else {
+			return new ResponseEntity<String>("Success ",HttpStatus.OK);
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package com.poc.petbook.Entities;
+
+public class ChatMessages {
+
+}

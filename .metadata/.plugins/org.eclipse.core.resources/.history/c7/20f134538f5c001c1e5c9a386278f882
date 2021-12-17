@@ -1,0 +1,7 @@
+package com.poc.petbook.Repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ChatMessagesRepository extends MongoRepository<T, ID> {
+
+}
